@@ -1,6 +1,6 @@
 ﻿namespace RegistroContactosApp
 {
-    partial class Form1
+    partial class registroContactos
     {
         /// <summary>
         ///  Required designer variable.
@@ -90,29 +90,34 @@
             // 
             // ButtonAgregar
             // 
+            ButtonAgregar.BackColor = SystemColors.Info;
             ButtonAgregar.Location = new Point(334, 77);
             ButtonAgregar.Name = "ButtonAgregar";
             ButtonAgregar.Size = new Size(189, 53);
             ButtonAgregar.TabIndex = 6;
             ButtonAgregar.Text = "AGREGAR CONTACTO";
-            ButtonAgregar.UseVisualStyleBackColor = true;
+            ButtonAgregar.UseVisualStyleBackColor = false;
+            ButtonAgregar.Click += ButtonAgregar_Click_1;
             // 
             // ButtonLimpiar
             // 
+            ButtonLimpiar.BackColor = SystemColors.Info;
             ButtonLimpiar.Location = new Point(334, 150);
             ButtonLimpiar.Name = "ButtonLimpiar";
             ButtonLimpiar.Size = new Size(189, 53);
             ButtonLimpiar.TabIndex = 7;
             ButtonLimpiar.Text = "LIMPIAR CAMPOS";
-            ButtonLimpiar.UseVisualStyleBackColor = true;
+            ButtonLimpiar.UseVisualStyleBackColor = false;
+            ButtonLimpiar.Click += ButtonLimpiar_Click_1;
             // 
             // ListBoxContactos
             // 
             ListBoxContactos.FormattingEnabled = true;
-            ListBoxContactos.Location = new Point(332, 237);
+            ListBoxContactos.Location = new Point(334, 227);
             ListBoxContactos.Name = "ListBoxContactos";
-            ListBoxContactos.Size = new Size(271, 104);
+            ListBoxContactos.Size = new Size(409, 124);
             ListBoxContactos.TabIndex = 8;
+            ListBoxContactos.SelectedIndexChanged += ListBoxContactos_SelectedIndexChanged;
             // 
             // LabelEstado
             // 
@@ -123,11 +128,11 @@
             LabelEstado.TabIndex = 9;
             LabelEstado.Text = "label1";
             // 
-            // Form1
+            // registroContactos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(772, 421);
             Controls.Add(LabelEstado);
             Controls.Add(ListBoxContactos);
             Controls.Add(ButtonLimpiar);
@@ -138,8 +143,8 @@
             Controls.Add(EtiquetaEmail);
             Controls.Add(EtiquetaTelefono);
             Controls.Add(EtiquetaNombre);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "registroContactos";
+            Text = "registroContactos";
             ResumeLayout(false);
             PerformLayout();
         }
